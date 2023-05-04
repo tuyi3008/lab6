@@ -1,0 +1,17 @@
+#!/bin/bash
+# Set the PS1 variable with your desired prompt message
+PS1="\[\033[38;5;208m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h \[$(tput sgr0)\]\[\033[38;5;39m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \$ \[$(tput sgr0)\]"
+
+# Explanation of the prompt:
+# \[\033[38;5;208m\] - set the text color to orange for the username
+# \u - display the username
+# \[$(tput sgr0)\] - reset the color back to default
+# \[\033[38;5;15m\] - set the text color to white for the "@" symbol and hostname
+# @\h - display "@" and hostname
+# \[$(tput sgr0)\] - reset the color back to default
+# \[\033[38;5;39m\] - set the text color to light blue for the current directory
+# \w - display the current working directory
+# \[$(tput sgr0)\] - reset the color back to default
+# \[\033[38;5;15m\] - set the text color to white for the "$" symbol
+# \$ - display the "$" symbol
+# \[$(tput sgr0)\] - reset the color back to default
