@@ -1,0 +1,10 @@
+#!/bin/bash
+
+export TERM=xterm
+export LANG=en_US.UTF-8
+
+# generate random bytes and write to file
+dd if=/dev/urandom of=random.bytes bs=1M count=1000
+
+# delete the file
+rm random.bytes
