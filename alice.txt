@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Set read, write, execute permission for everyone on alice.txt
+chmod 777 file-management/alice.txt
+
+# Set permission for user to read and write, and group and others to read only
+chmod 644 file-management/alice.txt
+
+# Create directory called level-1 inside file-management
+mkdir file-management/level-1
+
+# Create file called alice-level1.txt inside level-1 directory
+touch file-management/level-1/alice-level1.txt
+
+# Create directory called level-2 inside level-1
+mkdir file-management/level-1/level-2
+
+# Create file called alice-level2.txt inside level-2 directory
+touch file-management/level-1/level-2/alice-level2.txt
+
+# Set read and write permission for everyone recursively on file-management directory
+chmod -R 666 file-management/
+
+# Change to home directory
+cd ~/
+
+# Set read and write permission for everyone recursively on file-management directory
+chmod -R 666 file-management/
+
+
+
+
+mkdir -p ~/lab/sysDetails/reports
+
