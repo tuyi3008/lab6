@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export TERM=xterm
+
+export LANG=en_US.UTF-8
+
+watch -d -n 0.5 "cat /proc/meminfo"
+
