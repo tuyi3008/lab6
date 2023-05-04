@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Output total memory
+echo "Total memory:"
+cat /proc/meminfo | grep "MemTotal"
+
+# Output available memory
+echo "Available memory:"
+cat /proc/meminfo | grep "MemAvailable"
