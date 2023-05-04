@@ -1,0 +1,34 @@
+#!/bin/bash
+
+export TERM=xterm
+export LANG=en_US.UTF-8
+
+# Creating an empty file
+touch helloWorld.txt
+
+# Watching the contents of helloWorld.txt
+watch cat helloWorld.txt &
+
+# Redirecting output to helloWorld.txt
+echo "Hello World" > helloWorld.txt
+
+# Redirecting output to helloWorld.txt again
+echo "Goodbye World" > helloWorld.txt
+
+# Checking the contents of helloWorld.txt
+cat helloWorld.txt
+
+# Redirecting output to helloWorld.txt using > again
+echo "Hello Again" > helloWorld.txt
+
+# Redirecting output to helloWorld.txt using >> this time
+echo "Goodbye Again" >> helloWorld.txt
+
+# Checking the contents of helloWorld.txt
+cat helloWorld.txt
+
+# Redirecting output of /proc/meminfo and top to systemStats.txt
+cat /proc/meminfo > systemStats.txt
+top -b -n 1 >> systemStats.txt
+echo "Bash version: $BASH_VERSION" >> systemStats.txt
+
