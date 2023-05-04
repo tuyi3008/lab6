@@ -1,0 +1,20 @@
+#!/bin/bash
+
+mkdir -p ~/lab/sysDetails/reports
+
+# Get OSTYPE
+echo $OSTYPE
+
+# Get BASH_VERSION
+echo $BASH_VERSION
+
+# Get user ID
+echo $UID
+
+# Create bash_version.txt and write BASH_VERSION to it
+echo $BASH_VERSION > ~/lab/sysDetails/reports/bash_version.txt
+
+# Output contents of bash_version.txt
+cat ~/lab/sysDetails/reports/bash_version.txt
+
+
